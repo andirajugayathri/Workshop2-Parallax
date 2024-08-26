@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans',Arial, Helvetica, sans-serif;
+        }
+        .nav{
+            position: fixed;
+            top:0;
+            z-index:1;
+        }
+        .navbar{
+            display: flex;
+            column-gap: 10px;
+            padding-top: 20px;
+        }
+        .image1{
+            background-image: url("img1.avif");
+            background-attachment: fixed;
+            background-size: cover;
+            height:100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center; 
+        }
+        .image2{
+            background-image: url("img3.avif");
+            background-attachment: fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+        }
+        .image3{
+            background-image: url("img4.avif");
+            background-attachment: fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+        }
+        .image1 a{ 
+           text-decoration: none;
+            color: black;
+        }
+        .puppi1{
+            background-color:rgba(255, 255, 255,0.5);
+            backdrop-filter: blur(6px);
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-around;
+            align-items:center;
+            width: 60%;
+            height: 50%; 
+        }
+        .puppi1 img{
+            margin-left: 40px; 
+        }
+        .content{
+            margin-left:-500px;
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            color: white;
+            padding: 40px 30px 40px 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="image1" id="Playful">
+        <div class="nav">
+            <h1>Adorable Puppies</h1>
+            <div class="navbar">
+            <a href="#Playful">Playful Pups</a>
+            <a href="#sleepy">Sleepy Pups</a>
+            <a href="#curious">Curious Pups</a>
+            </div>
+        </div>
+        <div class="puppi1">
+         <div><img src="img1.avif" width="40%" height="40%"></div>
+          <div class="content"><h3>Playful Puppies</h3>
+            <p>Puppies love to play!It's how they learn about the world and develop important skills</p></div>
+        </div>
+    </div>
+
+    <div class="image2" id="sleepy">
+        <div class="puppi1">
+        <div><img src="img4.avif" width="40%" height="40%"></div>
+        <div class="content"><h3>sleepy Puppies</h3>
+            <p>Puppies love to play!It's how they learn about the world and develop important skills</p></div>
+        </div>
+    </div> 
+
+    <div class="image3">
+        <div class="puppi1" id="curious">
+        <div><img src="img3.avif" width="40%" height="40%"></div>
+        <div class="content"><h3>Curious Puppies</h3>
+            <p>Puppies love to play!It's how they learn about the world and develop important skills</p></div>
+        </div>
+    </div> 
+
+    <div class="footer"><p>@2024 Puppy Parallax Demo</p></div>
+</body>
+</html>
